@@ -1,8 +1,10 @@
 import { createContext, useState, useEffect } from "react";
 import { Comments as data } from "../data/Comments";
+import Editing from "../components/Editing";
 export const CommentsContext = createContext();
 
 export function CommentsContextProvider(props) {
+  const [Id, setId] = useState(0)
   const [Comments, setComments] = useState([]);
   const [Edit, setEdit] = useState("false");
   useEffect(() => {
@@ -23,23 +25,15 @@ export function CommentsContextProvider(props) {
   }
   function EditComment(id) {
     const find = Comments.findIndex((comments) => comments.id === id);
+    setId(id)
     const asd = Comments.map((id, i) => {
       if (i === find) {
         setEdit("true");
-        return EditAsync()
-      } else {
-        return id;
-      }
+      } 
     });
     setComments(asd);
   }
-  function EditAsync (comment) {
-    let robj = {};
-    robj.name = comment.Name;
-    robj.message = comment.Message;
-    robj.id = id.id;
-    return robj; 
-    }
+
   return (
     <CommentsContext.Provider
       value={{
@@ -49,6 +43,7 @@ export function CommentsContextProvider(props) {
         DeleteComment,
         EditComment,
         Edit,
+        Id,
         setEdit,
         EditAsync
       }}
