@@ -14,11 +14,11 @@ export const Comments = [
         name: 'Grifindor',
         message: 'jdaisjdiajsd',
         image: '',
-        id: 0,
+        id: 2,
     },{
         name: 'gen',
         image: '',
         message: 'asdasd',
-        id: 1,
+        id: 3,
     }
 ]

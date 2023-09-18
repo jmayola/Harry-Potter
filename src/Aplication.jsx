@@ -1,5 +1,6 @@
 import MailBox from "./components/MailBox";
 import Editing from "./components/Editing";
+import Header from './components/Header';
 function Aplication() {
   return (
     <>
