@@ -26,5 +26,4 @@ function ShowComments() {
     </CommentsContextProvider>
   );
 }
-
 export default ShowComments;

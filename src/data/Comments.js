@@ -13,12 +13,12 @@ export const Comments = [
     {
         name: 'Grifindor',
         message: 'jdaisjdiajsd',
-        image: '',
-        id: 0,
+        image: 'src/assets/Slytherin_.png',
+        id: 2,
     },{
         name: 'gen',
-        image: '',
+        image: 'src/assets/Ravenclaw_.png',
         message: 'asdasd',
-        id: 1,
+        id: 3,
     }
 ]
