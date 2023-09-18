@@ -17,8 +17,8 @@ function ShowComments() {
   return (
     <CommentsContextProvider>
       {Comments.map((Comments) => (
-        <div key={Comments.id}  onClick={() => EditComment(Comments.id)}>
-          <div className="bg-[#030525] p-4 m-5 hover:border-[#0D113C] border-[#1B285E] border-4 rounded-3xl box-border text-slate-100">
+        <div key={Comments.id} onClick={() => EditComment(Comments.id)}>
+          <div className="bg-[#8F0F0F] p-4 m-5 hover:border-[#0D113C] border-[#1B285E] border-4 rounded-3xl box-border text-slate-100">
             <h1 className=" text-lg text-center">{Comments.name}</h1>
           </div>
         </div>
