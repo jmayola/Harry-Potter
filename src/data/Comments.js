@@ -1,13 +1,13 @@
 export const Comments = [
     {
-        name: 'Grifindor',
-        image: '',
+        name: 'Gryffindor',
+        image: 'src/assets/Gryffindor_.png',
         message: 'jdaisjdiajsd',
         id: 0,
     },{
-        name: 'gen',
+        name: 'Hufflepuff',
         message: 'asdasd',
-        image: '',
+        image: 'src/assets/Hufflepuff_.png',
         id: 1,
     },
     {
