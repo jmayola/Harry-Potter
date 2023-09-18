@@ -1,0 +1,5 @@
+const path = require('path')
+const pathresolve = path.resolve('main', 'adress', 'stiles.css')
+console.log(path.basename(pathresolve))
+console.log(path.join(pathresolve))
+console.log(path.dirname(pathresolve))
