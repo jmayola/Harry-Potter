@@ -8,11 +8,12 @@ function Editing() {
   if (Edit === "true") {
     return (
       <CommentsContextProvider>
-        <div className="fixed z-10 box-content m-auto inset-1 p-4 bg-[#2f387c5d] ease-in">
+        <div className="fixed z-10 box-content m-auto inset-0 p-4 bg-[#c5caf35d] ease-in">
           {
-              <div key={Comments.id}>
-                  <img className="w-11"src={Comments[Id].image} alt="" />
-                  <button onClick={()=>setEdit("false")}>
+              <div key={Comments.id} className="flex justify-center align-middle flex-col gap-4 bg-slate-100">
+                  <img className="w-1/4 m-auto"src={Comments[Id].image} alt="" />
+                  <p className="w-2/3 m-auto">{Comments[Id].message}</p>
+                  <button onClick={()=>setEdit("false")} className="bg-slate-900 w-max m-auto p-5">
                     Salir
                   </button>
               </div>
