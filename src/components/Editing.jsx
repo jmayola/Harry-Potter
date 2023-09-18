@@ -22,7 +22,6 @@ function Editing() {
       </CommentsContextProvider>
     );
   } else {
-    return console.log("gasjdajs");
   }
 }
 export default Editing;
