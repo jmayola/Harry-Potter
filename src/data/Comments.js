@@ -1,8 +1,8 @@
 export const Comments = [
     {
         name: 'Gryffindor',
+        message: '',
         image: 'src/assets/Gryffindor_.png',
-        message: 'jdaisjdiajsd',
         id: 0,
     },{
         name: 'Hufflepuff',
@@ -11,12 +11,12 @@ export const Comments = [
         id: 1,
     },
     {
-        name: 'Grifindor',
+        name: 'Slytherin',
         message: 'jdaisjdiajsd',
         image: 'src/assets/Slytherin_.png',
         id: 2,
     },{
-        name: 'gen',
+        name: 'Ravenclaw',
         image: 'src/assets/Ravenclaw_.png',
         message: 'asdasd',
         id: 3,
