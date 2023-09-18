@@ -29,11 +29,20 @@ export function CommentsContextProvider(props) {
     const asd = Comments.map((id, i) => {
       if (i === find) {
         setEdit("true");
-      } 
+        return EditAsync()
+      } else {
+        return id;
+      }
     });
     setComments(asd);
   }
-
+  function EditAsync (comment) {
+    let robj = {};
+    robj.name = comment.Name;
+    robj.message = comment.Message;
+    robj.id = id.id;
+    return robj; 
+    }
   return (
     <CommentsContext.Provider
       value={{
