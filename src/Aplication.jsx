@@ -1,6 +1,7 @@
 import MailBox from "./components/MailBox";
 import Editing from "./components/Editing";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function Aplication() {
   return (
@@ -8,6 +9,7 @@ function Aplication() {
       <Header></Header>
       <MailBox></MailBox>
       <Editing></Editing>
+      <Footer></Footer>
     </>
   );
 }
