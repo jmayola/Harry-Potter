@@ -18,7 +18,7 @@ function ShowComments() {
     <CommentsContextProvider>
       {Comments.map((Comments) => (
         <div key={Comments.id} onClick={() => EditComment(Comments.id)}>
-          <div className=" m-auto  bg-[#b6a4a4] p-10  hover:border-[#78ff67] border-[#03050a] border-4 flex rounded-3xl box-border text-slate-100 w-full justify-center align-middle">
+          <div className=" m-auto  bg-[#d3cece] p-10  hover:border-[#975a2e] border-4 flex rounded-3xl box-border text-slate-100 w-full justify-center align-middle">
             <img
               src={Comments.image}
               alt=""
